@@ -1,0 +1,59 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --hospital-green: #ACD9B2;
+    --text-input-field: #F7F7F7;
+    --dark: #232830;
+    --black: #000000;
+    --white: #FFFFFF;
+    --small: 14px;
+    --medium: 16px;
+    --large: 18px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+}
+
+.menu-container {
+    width: 140px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.menu-container ul {
+    padding: 10px 15px 10px 0px;
+}
+
+.menu-container li {
+    padding: 0px 0px 20px 0px;
+    list-style: none; 
+    text-align: end;
+}
+
+.menu-container li a{
+    text-decoration: none;
+}
+
+.orders-account {
+    padding-top: 0px;
+    margin: 5px;
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.orders-account a {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.sign-out li {
+    padding-bottom: 0px;
+}
+
+.sign-out li a {
+    color: var(--hospital-green);
+    font-size: var(--small);
+}
+
