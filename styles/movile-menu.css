@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 414px;
-    height: auto;
+    height: 100vh;
 }
 
 ul {
@@ -54,6 +54,7 @@ a {
     font-weight: 100;
     color: var(--black);
 }
+
 .sign-out {
     margin: 10px 0px 0px 0px ;
 }
@@ -61,5 +62,3 @@ a {
 .sign-out a {
     color: var(--hospital-green);
 }
-
-
