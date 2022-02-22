@@ -1,0 +1,152 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --hospital-green: #ACD9B2;
+    --text-input-field: #F7F7F7;
+    --dark: #232830;
+    --black: #000000;
+    --white: #FFFFFF;
+    --small: 14px;
+    --medium: 16px;
+    --large: 18px;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--text-input-field);
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.menu-img {
+    width: 24px;
+    height: 24px;
+    display: none;
+    margin-right: 80px;
+}
+
+.logo-img {
+    width: 180px;
+    height: auto;
+    margin-right: 80px;
+}
+
+.nav-left ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-left ul li {
+    margin-right: 20px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: var(--very-light-pink);
+}
+
+.nav-left ul li a:hover {
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+nav h1 {
+    display: none;
+    font-size: var(--large);
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.nav-right div {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    color: var(--black);
+    font-size: var(--small); 
+    font-weight: 100; 
+    margin-right: 8px;
+    padding: 0px;
+}
+
+.arrow {
+    transform: rotate(90deg);
+    width: 10px;
+    height: 10px;
+    padding-left: 4px;
+    margin-right: 20px;
+}
+
+.shopping-car {
+    position: relative;
+}
+
+.shopping-car div {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    bottom: 15px;
+    left: 15px;
+}
+
+.shopping-car div p {
+    font-size: var(--small);
+    font-weight: bold;
+}
+
+@media (max-width:910px) {
+    .menu-img {
+        display: block;
+    }
+    .logo-img {
+        display: none;
+    }
+
+    .nav-left ul {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .email {
+        display: none;
+    }
+
+    nav h1 {
+        display: block;
+    }
+}
